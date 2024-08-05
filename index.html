@@ -16,7 +16,7 @@
     sl.set('a', 123, new Date().getTime() + 5000)
 
     setInterval(() => {
-      const a = sl.g
+      const a = sl.get('a')
       console.log(a)
     }, 500)
   </script>
