@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage</title>
+</head>
+
+<body>
+  <script type="module">
+    import { Storage } from './dist/index.js'
+    const sl = new Storage()
+    //五秒后过期
+    sl.set('a', 123, new Date().getTime() + 5000)
+
+    setInterval(() => {
+      const a = sl.g
+      console.log(a)
+    }, 500)
+  </script>
+</body>
+
+</html>
