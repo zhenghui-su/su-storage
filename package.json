@@ -1,0 +1,22 @@
+{
+	"name": "su-storage",
+	"version": "1.0.0",
+	"description": "可支持过期时间的localStorage",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "rollup -c"
+	},
+	"keywords": [],
+	"author": "suzhenghui",
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"types": "dist/index.d.ts",
+	"dependencies": {
+		"rollup": "^4.20.0",
+		"rollup-plugin-typescript2": "^0.36.0",
+		"typescript": "^5.5.4"
+	}
+}
