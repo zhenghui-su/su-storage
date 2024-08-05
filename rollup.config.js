@@ -1,8 +1,5 @@
 import ts from "rollup-plugin-typescript2";
-import path from "path";
-import { fileURLToPath } from "url";
-const metaUrl = fileURLToPath(import.meta.url);
-const dirName = path.dirname(metaUrl);
+
 export default {
 	// 入口文件地址
 	input: "src/index.ts", // 源文件入口
